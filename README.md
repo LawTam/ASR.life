@@ -8,13 +8,12 @@ HTML, CSS, Javascript
 
 ||
 
-Node.js & Express.js -- useful website development architectures || https://expressjs.com/en/starter/generator.html
+Node.js & Express.js -- useful website development architecture and API || https://expressjs.com/en/starter/generator.html
 
 ||
 
-Jade template engine -- useful for clean webpage building
+Jade template engine -- useful for clean webpage building || https://naltatis.github.io/jade-syntax-docs/
 
 || 
 
-Adobe XD -- free wireframing tool built by Adobe || 
-https://www.adobe.com/products/xd.html
+Adobe XD -- free wireframing tool built by Adobe || https://www.adobe.com/products/xd.html

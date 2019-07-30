@@ -1,5 +1,5 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Dubai", Helvetica, Arial, sans-serif;
   margin: 0;
 }
 
@@ -12,18 +12,18 @@ ul{
   background-color: black;
   overflow: hidden;
   padding-left: 5%;
-  width: 100%;
+  padding-top: 5px;
   border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px
+  border-bottom-right-radius: 30px;
 }
 .topNav a{
   color: white;  
   float: left;
   display: block;
   text-align: center;
-  padding: 5px;
+  padding: 10px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
 }
 .topnav a:hover{
   color: yellow;
@@ -32,14 +32,29 @@ ul{
   background-color: #4CAF50;
   color: white;
 }
-
 #homeNav {
-  font: 14px 'Montalban';
+  font: 20px 'Montalban';
+}
+#navRoutes{
+  padding-right: 5%;
+  float: right;
+}
+#navRoutes a{
+  display: inline;
+  padding-right: 30px;
+}
+a#GetStoked {
+  padding-right: 10px;
+  font: 18px 'Grand Sport';
+  background-image: linear-gradient(#D91E36, #3C0101);
+  border-radius: 2px;
+  white-space: pre;
 }
 
 @font-face {
+  font-family: "Grand Sport";
+  src: url("fonts/grand_sport/grandsporthalfital.ttf") format("opentype");
+
   font-family: "Montalban";
-  src: 
-    url("fonts/montalban-webfont.woff") format("woff"),
-    url("fonts/montalban-webfont") format("truetype"),
+  src: url("fonts/montalban/Montalban.ttf") format("opentype");
 }

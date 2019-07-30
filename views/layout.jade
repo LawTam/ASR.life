@@ -6,12 +6,15 @@ html
   body
     div.topNav
         a(href='/')
-          image(src='/public/images/ASR_Logo25.png' alt="ASR logo")
+          img(src='../public/images/ASR_Logo25.png' alt="ASR logo")
           text#homeNav Adrenaline Sports Resort
-        a(href="About Us") About Us
-        a(href="FAQ") FAQ
-        a(href="Invest") Invest
-        a(href="Get Stoked") Get Stoked
+        
+        div#navRoutes
+          a(href="About Us") About Us
+          a(href="FAQ") FAQ
+          a(href="Invest") Invest
+          a#GetStoked(href="Get Stoked") Get 
+                                      | Stoked
 
     block content
   

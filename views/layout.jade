@@ -1,7 +1,22 @@
 doctype html
 html
   head
-    title= ASR
+    title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    div.topNav
+      ul.col-md-12.row
+        a(href='/')
+          image#homeNav(src='/public/images/ASR_Logo25.png' alt="ASR logo")
+          text Adrenaline Sports Resort
+        a(href="About Us")
+          li.col-md-3.col-md-offset-1 About Us
+        a(href="FAQ")
+          li.col-md-3 FAQ
+        a(href="Invest")
+          li.col-md-3 Invest
+        a(href="Get Stoked")
+          li.col-md-3 Get Stoked
+
     block content
+  

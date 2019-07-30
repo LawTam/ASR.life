@@ -11,17 +11,17 @@ ul{
 .topNav {
   background-color: black;
   overflow: hidden;
-  padding: 0;
+  padding-left: 5%;
   width: 100%;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px
 }
-.topnav a{
+.topNav a{
   color: white;  
   float: left;
   display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 5px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -33,6 +33,13 @@ ul{
   color: white;
 }
 
-#homeNav{
+#homeNav {
+  font: 14px 'Montalban';
+}
 
+@font-face {
+  font-family: "Montalban";
+  src: 
+    url("fonts/montalban-webfont.woff") format("woff"),
+    url("fonts/montalban-webfont") format("truetype"),
 }

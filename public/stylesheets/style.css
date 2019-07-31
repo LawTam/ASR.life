@@ -54,7 +54,8 @@ a#GetStoked {
 @font-face {
   font-family: "Grand Sport";
   src: url("fonts/grand_sport/grandsporthalfital.ttf") format("opentype");
-
+}
+@font-face {
   font-family: "Montalban";
   src: url("fonts/montalban/Montalban.ttf") format("opentype");
 }

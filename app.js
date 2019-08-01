@@ -4,10 +4,6 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-// Declare webpage routers
-var Homepage_Router = require('./routes/Homepage');
-var About_Us_Router = require('./routes/About_Us');
-
 var app = express();
 
 // view engine setup
@@ -18,11 +14,20 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+
+// Serve static content (images, videos, etc) from the 'public' directory
+app.use(express.static('public'));
+
+// Declare webpage routers here
+// <ADD HERE FOR A NEW WEBPAGE>
+var Homepage_Router = require('./routes/Homepage');
+var About_Us_Router = require('./routes/About_Us');
 
 // Hook up routers to the express app
+// <ADD HERE FOR A NEW WEBPAGE>
 app.use('/', Homepage_Router);
 app.use('/About_Us', About_Us_Router);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

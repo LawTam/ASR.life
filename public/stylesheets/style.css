@@ -2,53 +2,77 @@ body {
   font: 14px "Dubai", Helvetica, Arial, sans-serif;
   margin: 0;
 }
-
 ul{
   list-style-type: none;
 }
 
 /* Styling for Top Navigation Bar*/
 .topNav {
+  position: fixed;
+  width: 100%;
   background-color: black;
   overflow: hidden;
-  padding-left: 5%;
   padding-top: 5px;
+  padding-bottom: 5px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
 .topNav a{
   color: white;  
   float: left;
-  display: block;
   text-align: center;
-  padding: 10px;
   text-decoration: none;
   font-size: 18px;
 }
-.topnav a:hover{
-  color: yellow;
-}
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-#homeNav {
+.topNav a#homeNav {
+  padding-left: 8%;
   font: 20px 'Montalban';
 }
-#navRoutes{
-  padding-right: 5%;
+.topNav #ASR_logo {
+  height: 35px;
+}
+.topNav #ASR_text {
+  vertical-align: 35%;
+  padding-top: 0px;
+  padding-left: 10px;
+}
+.topNav #navRoutes{
+  padding-right: 3%;
   float: right;
 }
-#navRoutes a{
-  display: inline;
-  padding-right: 30px;
+.topNav #navRoutes a{
+  padding-top: 6px;
+  margin-right: 30px;
 }
-a#GetStoked {
+.topNav #navRoutes a#GetStoked {
+  padding: 5px;
   padding-right: 10px;
   font: 18px 'Grand Sport';
   background-image: linear-gradient(#D91E36, #3C0101);
   border-radius: 2px;
   white-space: pre;
+}
+
+/* Block content styles */
+.contentContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+.videoMask {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: -1;
+  padding-top: getTopNavHeight()
+}
+
+/* Homepage specific styles */
+#welcomeVideo{
+  border-radius: 10px;
+  width: 100%;
 }
 
 @font-face {

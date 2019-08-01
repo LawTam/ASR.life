@@ -5,15 +5,16 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     div.topNav
-        a(href='/')
-          img(src='../public/images/ASR_Logo25.png' alt="ASR logo")
-          text#homeNav Adrenaline Sports Resort
-        
-        div#navRoutes
-          a(href="About_Us") About Us
-          a(href="FAQ") FAQ
-          a(href="Invest") Invest
-          a#GetStoked(href="Get_Stoked") Get 
-                                      | Stoked
+      a#homeNav(href='/')
+        img#ASR_logo(src='/images/ASR_Logo25.png', alt="ASR logo")
+        text#ASR_text Adrenaline Sports Resort 
+      div#navRoutes       
+        a(href="About_Us") About Us
+        a(href="FAQ") FAQ
+        a(href="Invest") Invest
+        a#GetStoked(href="Get_Stoked")  
+          | Get 
+          br
+          | Stoked
     block content
   

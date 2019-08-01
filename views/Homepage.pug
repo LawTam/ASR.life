@@ -1,5 +1,9 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div.contentContainer
+    div.videoMask
+      video#welcomeVideo(autoplay,controls) Your Browser does not support the video tag
+        source(src='/videos/rafting.mp4', type='video/mp4', alt= 'Welcome video.mp4')
+      
+    p Welcome to #{title}

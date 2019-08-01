@@ -1,0 +1,46 @@
+extends layout
+append head
+    script(src='/javascripts/setWelcomeVideoHeight.js', type= 'text/javascript')
+    script(src='jquery.pagepiling.js', type='text/javascript')
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+    script. 
+        $(document).ready(function() {
+        $('#pagepiling').pagepiling({
+            menu: null,
+                direction: 'vertical',
+                verticalCentered: true,
+                sectionsColor: [],
+                anchors: [],
+                scrollingSpeed: 700,
+                easing: 'swing',
+                loopBottom: false,
+                loopTop: false,
+                css3: true,
+                navigation: {
+                    'textColor': '#000',
+                    'bulletsColor': '#000',
+                    'position': 'right',
+                    'tooltips': ['section1', 'section2', 'section3', 'section4']
+                },
+                normalScrollElements: null,
+                normalScrollElementTouchThreshold: 5,
+                touchSensitivity: 5,
+                keyboardScrolling: true,
+                sectionSelector: '.section',
+                animateAnchor: false,
+
+            //events
+            onLeave: function(index, nextIndex, direction){},
+            afterLoad: function(anchorLink, index){},
+            afterRender: function(){},
+        });
+        });
+
+    script. 
+        document.getElementById('welcomeVideo').addEventListener('ended',myHandler,false);
+        function myHandler(e) {
+            console.log('ended');
+            setTimeout(function(){
+                document.getElementById('myVideo').play();
+            }, 5000);
+        }

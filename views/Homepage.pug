@@ -3,6 +3,7 @@ extends layout
 block content
   div.contentContainer
     div.videoMask
+      script(src='/javascripts/setWelcomeVideoHeight.js')
       video#welcomeVideo(autoplay,controls) Your Browser does not support the video tag
         source(src='/videos/rafting.mp4', type='video/mp4', alt= 'Welcome video.mp4')
       

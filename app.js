@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-// Serve static content (images, videos, etc) from the 'public' directory
+// Serve static content (images, videos, scripts) from the 'public' directory
 app.use(express.static('public'));
 
 // Declare webpage routers here
@@ -29,11 +29,11 @@ app.use('/', Homepage_Router);
 app.use('/About_Us', About_Us_Router);
 
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-  res.status(404).send("Sorry can't find that!")
-});
+// // catch 404 and forward to error handler
+// app.use(function(req, res, next) {
+//   next(createError(404));
+//   res.status(404).send("Sorry can't find that!")
+// });
 
 // error handler
 app.use(function(err, req, res, next) {

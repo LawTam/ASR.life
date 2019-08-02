@@ -4,19 +4,20 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='pagepiling stylesheet', href='/stylesheets/jquery.pagepiling.css')
-
-  body
-    div#topNav
-      a#homeNav(href='/')
-        img#ASR_logo(src='/images/ASR_Logo25.png', alt="ASR logo")
-        text#ASR_text Adrenaline Sports Resort 
-      div#navRoutes       
-        a(href="About_Us") About Us
-        a(href="FAQ") FAQ
-        a(href="Invest") Invest
-        a#GetStoked(href="Get_Stoked")  
-          | Get 
-          br
-          | Stoked
-    block content
-  
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+  body 
+    div.contentContainer
+      div#topNav
+        a#homeNav(href='/')
+          img#ASR_logo(src='/images/ASR_Logo25.png', alt="ASR logo")
+          text#ASR_text Adrenaline Sports Resort 
+        div#navRoutes       
+          a(href="About_Us") About Us
+          a(href="FAQ") FAQ
+          a(href="Invest") Invest
+          a#GetStoked(href="Get_Stoked")  
+            | Get 
+            br
+            | Stoked
+      block content
+    

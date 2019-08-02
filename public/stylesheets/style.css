@@ -1,7 +1,10 @@
+html,body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 body {
-  font: 14px "Dubai";
+  font: 1rem "Dubai";
   margin: 0;
-  padding-bottom: 100px;
 }
 ul{
   list-style-type: none;
@@ -11,10 +14,11 @@ ul{
 #topNav {
   position: fixed;
   width: 100%;
-  background-color: black;
+  background-color: #0E0D0B;
   overflow: hidden;
   padding-top: 5px;
   padding-bottom: 5px;
+  border-right: 15px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   z-index: 2;
@@ -59,30 +63,65 @@ ul{
 .contentContainer {
   position: relative;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 15px;
+  overflow-y: scroll;
+  height: 100vh;
+  z-index: 3;
 }
 .videoMask {
   width: inherit;
   overflow: hidden;
   position: fixed;
-  padding-top: 45px;
-  padding-right: 15px;
+  padding-top: 80px;
+  padding-right: 50px;
+  padding-left: 30px;
   z-index: 0;
 }
 .theGoodStuff {
-  margin-top: 45%;
+  padding-top: 50vw;
+  height: 100%;
+  width: 100%;
   z-index: 1;
+  overflow: hidden;
 }
 .bannerT1 {
   padding-left: 5%;
-  font: 50px "Grand Sport";
+  font: 3rem "Grand Sport";
+}
+.bannerT2 {
+  font: 3rem "Montalban";
+  color: #D91E36;
+}
+.center {
+  align-content: center;
+  text-align: center;
+  padding-right: 3vw;
 }
 .mainContent {
+  overflow: hidden;
   margin-top: 10%;
-  padding: 3%;
+  width: 100vw;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.flexCol5050 {
+  display: flex;
+  flex-direction: row;
+}
+.flexHalf {
+  flex: 0.5;
+  padding-left: 3%;
+  padding-right: 3%;
+  text-align: center;
+  justify-content: center;
+  vertical-align: 50%;
+  align-items: center;
+}
+.fittedText {
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding-right: 8%;
 }
 
 /* Homepage specific styles */
@@ -90,6 +129,21 @@ ul{
   margin-right: 15px;
   border-radius: 10px;
   width: 100%;
+}
+#lookingForARush {
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #0E0D0B;
+  color: white;
+  padding-bottom: 3%;
+}
+#ASRAerial{
+  margin-right: 0px;
+  padding-top: 2%;
+  width: 90%;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
 }
 
 

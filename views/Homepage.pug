@@ -1,14 +1,13 @@
 extends layout
 
 block content
-  div.videoMask
-    video#welcomeVideo(autoplay, controls, loop, muted) Your Browser does not support the video tag
+  div.videoMask.section1
+    video#welcomeVideo(autoplay, loop, muted) Your Browser does not support the video tag
       source(src='/videos/rafting.mp4', type='video/mp4', alt= 'Welcome video.mp4')
 
   div.theGoodStuff
-    h1.bannerT1 Welcome to ASR
     div.mainContent
-      div#lookingForARush 
+      div#lookingForARush.section2
         h2.bannerT2.center LOOKING FOR A RUSH?
         div.flexCol5050
           div.flexHalf
@@ -27,3 +26,7 @@ block content
               li A surf park with waves ranging from family friendly boogie board size to 8 foot faces.
               br
               li Park facitilies including equipment rental, cafe, group hosting areas, climbing gym, and a mountain bike path.
+      div#banners.section3
+        div.bannerBlack#getInvolved
+        div.bannerGray#ourActivities
+        div.bannerBlack#contactUs

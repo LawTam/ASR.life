@@ -3,7 +3,7 @@ html,body {
   overflow-x: hidden;
 }
 body {
-  font: 1rem "Dubai";
+  font: 1.1rem "Dubai";
   margin: 0;
 }
 ul{
@@ -14,13 +14,11 @@ ul{
 #topNav {
   position: fixed;
   width: 100%;
-  background-color: #0E0D0B;
+  background-color: #181b1e ;
   overflow: hidden;
   padding-top: 5px;
   padding-bottom: 5px;
   border-right: 15px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
   z-index: 2;
 }
 #topNav a{
@@ -50,9 +48,10 @@ ul{
   padding-top: 6px;
   margin-right: 30px;
 }
-#topNav #navRoutes a#GetStoked {
+#topNav #navRoutes a#BookNow {
   padding: 5px;
-  padding-right: 10px;
+  padding-right: 15px;
+  text-align: center;
   font: 18px 'Grand Sport';
   background-image: linear-gradient(#D91E36, #3C0101);
   border-radius: 2px;
@@ -62,7 +61,6 @@ ul{
 /* Block content styles */
 .contentContainer {
   position: relative;
-  display: flex;
   overflow-y: scroll;
   height: 100vh;
   z-index: 3;
@@ -70,17 +68,11 @@ ul{
 .videoMask {
   width: inherit;
   overflow: hidden;
-  position: fixed;
-  padding-top: 80px;
-  padding-right: 50px;
-  padding-left: 30px;
-  z-index: 0;
+  padding-top: 60px;
 }
 .theGoodStuff {
-  padding-top: 50vw;
   height: 100%;
   width: 100%;
-  z-index: 1;
   overflow: hidden;
 }
 .bannerT1 {
@@ -88,7 +80,7 @@ ul{
   font: 3rem "Grand Sport";
 }
 .bannerT2 {
-  font: 3rem "Montalban";
+  font: 2.5rem "Montalban";
   color: #D91E36;
 }
 .center {
@@ -126,16 +118,18 @@ ul{
 
 /* Homepage specific styles */
 #welcomeVideo{
-  margin-right: 15px;
-  border-radius: 10px;
+  position: relative;
+  overflow:hidden;
   width: 100%;
+  height: 800px;
 }
 #lookingForARush {
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #0E0D0B;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  background-color: #181b1e ;
   color: white;
-  padding-bottom: 3%;
 }
 #ASRAerial{
   margin-right: 0px;
@@ -144,6 +138,13 @@ ul{
   border-radius: 10px;
   background-color: white;
   color: black;
+}
+#banners {
+  background-color: white;
+  color: black;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
 }
 
 

@@ -7,7 +7,7 @@ html
     script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
   body 
     div.contentContainer
-      div#topNav
+      div#topNav.black-back
         a#homeNav(href='/')
           img#ASR_logo(src='/images/ASR_Logo25.png', alt="ASR logo")
           text#ASR_text ADRENALINE SPORTS RESORT 
@@ -21,7 +21,7 @@ html
             | Now
       block content
 
-      div.footer.flexCol5050
+      div#footer.flexRow
         div.flexHalf
           text.fittedText.GrandSport-font-small.font-red ADRENALINE
           br
@@ -29,5 +29,5 @@ html
           br
           text.fittedText.font-fit.font-white Adrenaline is used in both technical and nontechnical contexts. It is commonly used in describing the physiological symptoms (such as increased heart rate and respiration) that occur as part of the body's fight-or-flight response.           &copy;Merriam-Webster
     
-      div.copyrightsFooter
+      div#copyrightsFooter.black-back
         text.fittedText &copy; Adrenaline Sports Resort

@@ -6,27 +6,50 @@ block content
       source(src='/videos/rafting.mp4', type='video/mp4', alt= 'Welcome video.mp4')
 
   div.theGoodStuff
-    div.mainContent
-      div#lookingForARush.section2
+    div.mainContent.center
+      div#lookingForARush.inner.black-back.section2
         h2.bannerT2.center LOOKING FOR A RUSH?
-        div.flexCol5050
-          div.flexHalf-Left
+        div.flexRow.constrain
+          div.flexHalf
             div.fittedText
               text ASR is a sporting complex and resort that takes thethrill of hallmark summer outdoor adventure sports and puts it conveniently located in your community.
             br
-            div#ASRAerial
-              image#ASRAerial(src='/images/ASR_Aerial.jpg', alt= 'asr aerial.jpg')
+            div#ASRAerial.container
+              image.img(src='/images/ASR_Aerial.jpg', alt= 'asr aerial.jpg')
               br
               text Our proposed location in Santa Clara, California.
-          div.flexHalf-Right
-            text FEATURES:
+          div.flexHalf
+            text.center FEATURES:
             ol.fittedText
               li A central recirculating whitewater park for rafting, kayaking, and whitewater SUP'ing.
               br
               li A surf park with waves ranging from family friendly boogie board size to 8 foot faces.
               br
-              li Park facitilies including equipment rental, cafe, group hosting areas, climbing gym, and a mountain bike path.
-      div#banners.section3
-        div.bannerBlack#getInvolved
-        div.bannerGray#ourActivities
-        div.bannerBlack#contactUs
+              li Park facitilies including a climbing gym, a general fitness gym, equipment rental, and a mountain bike path.
+              br
+              li Accomodations include a resort area complete with a cafe, group hosting areas, and dining.
+      div#banners.flexRow.center.constrain.section3
+        a#getInvolved.banner.black-back(href="Get_Involved")
+          image(src='/images/get_involved.jpg')
+          div.block.fittedText
+            text.subText Work or volunteer with us
+            br
+            text.bannerName GET INVOLVED
+            br
+            text.navArrow &gt;
+        a#getStoked.banner.gray-back(href="Get_Stoked")
+          image(src='/images/get_stoked.jpg')
+          div.block.fittedText
+            text.subText Learn more about our activities
+            br
+            text.bannerName GET STOKED
+            br
+            text.navArrow &gt;
+        a#contactUs.banner.black-back(href="Contact_Us")
+          image(src='/images/coolest_kid.jpg')
+          div.block.fittedText
+            text.subText Invest in our business
+            br
+            text.bannerName CONTACT US
+            br
+            text.navArrow &gt;

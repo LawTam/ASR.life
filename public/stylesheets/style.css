@@ -14,7 +14,6 @@ ul{
 #topNav {
   position: fixed;
   width: 100%;
-  background-color: #181b1e ;
   overflow: hidden;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -58,15 +57,8 @@ ul{
   white-space: pre;
 }
 
-/* Block content styles */
-.contentContainer {
-  position: relative;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  height: 100vh;
-  z-index: 3;
-}
-.footer {
+/* Main section styles */
+#footer {
   background-image: url('../images/adrenaline_footer.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -76,13 +68,28 @@ ul{
   contain: content;
   padding: 10px;
   padding-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
-.copyrightsFooter {
+#copyrightsFooter {
   padding-left: 5px;
-  background-color: #181b1e;
   color: white;
-  font-size: 12px;
+  font-size: 1.5vmin;
+  display: flex;
+}
+
+/* Block content styles */
+.contentContainer {
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  z-index: 3;
+}
+.inner {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 20px;
+  padding-bottom: 70px;
 }
 .videoMask {
   width: inherit;
@@ -114,12 +121,11 @@ ul{
 }
 .font-fit {
   line-height: 1;
-  font-size: 1.5vmin;
+  font-size: 1.8vmin;
 }
 .center {
   align-content: center;
   text-align: center;
-  padding-right: 3vw;
 }
 .mainContent {
   overflow: hidden;
@@ -128,18 +134,21 @@ ul{
   display: flex;
   flex-direction: column;
 }
-.flexCol5050 {
+.flexRow {
   display: flex;
   flex-direction: row;
 }
 .flexHalf {
-  flex: 0.5;
-  padding-left: 10%;
-  padding-right: 10%;
+  flex: 1;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
   justify-content: center;
   vertical-align: 50%;
   align-items: center;
+  contain: content;
+  float: left;
+  max-width: 670px;
 }
 .flexHalf-Left {
   flex: 0.5;
@@ -157,11 +166,53 @@ ul{
   vertical-align: 50%;
   align-items: center;
 }
+.flexThird {
+  flex: 1;
+}
+.black-back {
+  background-color: #181b1e;
+  color: white;
+}
+.gray-back {
+  background-color: #c3c3c3;
+  color: black;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 5px;
+  text-decoration: none;
+}
+.banner img {
+  width: 100%;
+}
+.banner .block {
+  padding: 2px;
+  height: 200px;
+}
+.banner .subText {
+  font: 1.7vmin "Dubai";
+}
+.banner .bannerName {
+  font: 2.3vmin 'Montalban';
+}
+.navArrow {
+  font: 2.3vmin 'Montalban';
+  position: absolute;
+  left: 5px;
+  bottom: 0;
+}
 .fittedText {
   text-align: center;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  padding-right: 8%;
+}
+
+.constrain {
+  max-width: 1240px;
+  align-content: center;
+  margin: 0 auto;
 }
 
 /* Homepage specific styles */
@@ -172,28 +223,30 @@ ul{
   height: 800px;
 }
 #lookingForARush {
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 20px;
-  padding-bottom: 70px;
-  background-color: #181b1e ;
   color: white;
 }
-#ASRAerial{
+#lookingForARush #ASRAerial.container{
   margin-right: 0px;
-  padding-top: 2%;
-  width: 90%;
+  padding: 10px;
+  width: 100%;
   border-radius: 10px;
   background-color: white;
   color: black;
 }
+#ASRAerial .img {
+  width: 100%;
+  max-width: 670px;
+}
 #banners {
   background-color: white;
   color: black;
-  padding-left: 15%;
-  padding-right: 15%;
   display: flex;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
+
 
 
 @font-face {

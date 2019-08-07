@@ -213,6 +213,7 @@ ul{
   max-width: 1240px;
   align-content: center;
   margin: 0 auto;
+  contain: content;
 }
 
 /* Homepage specific styles */
@@ -229,7 +230,6 @@ ul{
   margin-right: 0px;
   padding: 10px;
   width: 100%;
-  border-radius: 10px;
   background-color: white;
   color: black;
 }
@@ -246,6 +246,11 @@ ul{
   padding-left: 100px;
   padding-right: 100px;
 }
+#blogSlideshow {
+  margin: 0 auto;
+  margin-top: 50px;
+  align-content: center;
+}
 
 
 
@@ -255,5 +260,5 @@ ul{
 }
 @font-face {
   font-family: "Montalban";
-  src: url("fonts/montalban/Montalban.ttf") format("opentype");
+  src: url("fonts/montalban/Montalban.otf") format("opentype");
 }

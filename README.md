@@ -9,6 +9,9 @@ PLANNING BEGINS> 05/21/2019
 
 DEVELOPMENT> 07/29/2019 - current
 
+# Intended Audience
+Clients and investors
+
 # Technologies Used
 HTML, CSS, Javascript, Jquery
 
@@ -23,4 +26,19 @@ Top Navigation Bar || https://www.w3schools.com/howto/howto_js_topnav.asp
 
 Slideshow || https://www.w3schools.com/howto/howto_js_slideshow.asp
 
+Flip-card || https://www.w3schools.com/howto/howto_css_flip_card.asp 
+
 Flexbox || https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+
+# Design Choices
+Main Color Scheme: #D91E36 (red, Alizarin), #FFFFFF (white), #181B1E (black, Black Pearl)
+
+Accent Colors: #c3c3c3 (white, Silver), 
+
+Fonts: 
+
+1. Company font: "Montalban"
+
+2. Header font: "Grand Sport"
+
+3. Default sans-serif (reading) font: "Dubai"

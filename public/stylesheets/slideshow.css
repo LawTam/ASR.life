@@ -22,7 +22,7 @@
   
   /* Next & previous buttons */
   .prev, .next {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8); 
     cursor: pointer;
     position: absolute;
     top: 50%;

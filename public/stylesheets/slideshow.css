@@ -4,25 +4,37 @@
     position: relative;
     margin: auto;
     padding: 10 auto;
+    width: 70vw;
+    height: 70vh;
+    border: 5px solid #181B1E;
   }
   
   /* Hide the images by default */
   .mySlides {
     display: none;
     width: 100%;
+    max-width: 1000px;
     padding: 10 auto;
+    contain: content;
+    height: 70vh;
+  }
+  .mySlides .img {
+    height: 100%;
   }
 
-  .mySlides .img {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    align-content: center;
+  .mySlides#slide1 {
+    background-image: url('/images/slideshow/olympic_trials.jpg');
+  }
+  .mySlides#slide2 {
+    background-image: url('images/slideshow/olympic_example.jpg');
+  }
+  .mySlides#slide3 {
+    background-image: url('images/slideshow/resort_example.jpg')
   }
   
   /* Next & previous buttons */
   .prev, .next {
-    background-color: rgba(0,0,0,0.8); 
+    background-color: #181B1E; 
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -49,7 +61,8 @@
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: white;
+    color: #181B1E;
   }
   
   /* Caption text */
@@ -74,6 +87,7 @@
   
   /* The dots/bullets/indicators */
   .dot {
+    border: 5px #181B1E;
     cursor: pointer;
     height: 15px;
     width: 15px;

@@ -33,7 +33,8 @@ Flexbox || https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 # Design Choices
 Main Color Scheme: #D91E36 (red, Alizarin), #FFFFFF (white), #181B1E (black, Black Pearl)
 
-Accent Colors: #c3c3c3 (white, Silver), 
+Accent Colors: #c3c3c3 (white, Silver), #EED202 (yellow, Safety Yellow)
+}
 
 Fonts: 
 

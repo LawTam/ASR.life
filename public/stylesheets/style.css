@@ -77,6 +77,7 @@ ul{
   font-size: 2vmin;
   display: flex;
   text-decoration: none;
+  
 }
 #copyrightFooter text.fittedText {
   font-size: 1.5vmin;
@@ -149,10 +150,10 @@ ul{
 .center {
   align-content: center;
   text-align: center;
+  margin: 0 auto;
 }
 .mainContent {
   overflow: hidden;
-  width: 100vw;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -286,6 +287,10 @@ ul{
   align-content: center center;
 }
 
+#getStokedVideo {
+  height: 50vh;
+  padding-top: 50px;
+}
 
 @font-face {
   font-family: "Grand Sport";

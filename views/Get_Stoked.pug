@@ -1,3 +1,9 @@
 extends layout
 
 block content
+    div.videoMask.center.section1
+        video#getStokedVideo(autoplay, loop, controls) Your Browser does not support the video tag
+            source(src='/videos/temp_vid.mp4', type='video/mp4', alt= 'Welcome video.mp4')
+    div.theGoodStuff.center 
+        .mainContent
+            h1.bannerT2 #{title}

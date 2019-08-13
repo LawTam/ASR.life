@@ -43,3 +43,6 @@ Fonts:
 2. Header font: "Grand Sport"
 
 3. Default sans-serif (reading) font: "Dubai"
+
+# Additional Resources
+@font-face css generator || http://www.cufonfonts.com

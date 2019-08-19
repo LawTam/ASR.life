@@ -7,7 +7,7 @@ Work cycle:
 
 PLANNING BEGINS> 05/21/2019
 
-DEVELOPMENT> 07/29/2019 - current
+DEVELOPMENT> 07/29/2019 - current   (~25 hours/week)
 
 # Intended Audience
 Clients and investors

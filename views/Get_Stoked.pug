@@ -2,8 +2,35 @@ extends layout
 
 block content
     div.videoMask.center.section1
-        video#getStokedVideo(autoplay, loop, controls) Your Browser does not support the video tag
+        video#getStokedVideo(autoplay, loop, controls, muted) Your Browser does not support the video tag
             source(src='/videos/temp_vid.mp4', type='video/mp4', alt= 'Welcome video.mp4')
     div.theGoodStuff.center 
         .mainContent
             h1.bannerT2 #{title}
+            .slideshow-container.full-width
+                div#pick-wet-or-dry.mySlides.fade.center.vertical-center
+                    div.flexRow
+                        div.left.banner.flexThird.white-back
+                            image(src='/images/driving_hard2.jpg')
+                            br
+                            text.subText More on aquatic sports
+                            text.bannerName Get Wet
+                            a.prev.bottom.relative(onclick= 'plusSlides(-1)') &#10094;
+                        div.middle.flexThird.vertical-center
+                            text.vertical-center At ASR, we take pride in our state of the art facilities for both dryland and aquatic sports.
+                            br
+                            br
+                            text.inner Click on either banner for more information.
+                        div.right.banner.flexThird.white-back
+                            image(src='/images/stay_dry.jpg')
+                            br
+                            text.subText More on dryland sports
+                            text.bannerName Play Dry
+                            a.next.relative(onclick= 'plusSlides(1)') &#10095;
+                .mySlides.fade#dryland-sports
+                .mySlides.fade#aquatic-sports
+
+            div(text-align= center)
+                span.dot(onclick= 'currentSlide(1)')
+                span.dot(onclick= 'currentSlide(2)')
+                span.dot(onclick= 'currentSlide(3)')

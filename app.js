@@ -27,11 +27,19 @@ app.use(express.static('public'));
 // <ADD HERE FOR A NEW WEBPAGE>
 var Homepage_Router = require('./routes/Homepage');
 var About_Us_Router = require('./routes/About_Us');
+var FAQ_Router = require('./routes/FAQ')
+var Book_Now_Router = require('./routes/Book_Now')
+var Invest_Router = require('./routes/Invest');
+var Get_Stoked_Router = require('./routes/Get_Stoked')
 
 // Hook up routers to the express app
 // <ADD HERE FOR A NEW WEBPAGE>
 app.use('/', Homepage_Router);
 app.use('/About_Us', About_Us_Router);
+app.use('/FAQ', FAQ_Router);
+app.use('/Book_Now', Book_Now_Router);
+app.use('/Invest', Invest_Router);
+app.use('/Get_Stoked', Get_Stoked_Router)
 
 
 // catch 404 and forward to error handler

@@ -6,7 +6,9 @@ html
     link(rel='stylesheet', href='/stylesheets/slideshow.css')
     //link(rel='stylesheet', href='/stylesheets/flip-card.css')
     //link(rel='stylesheet', href='/stylesheets/jquery.pagepiling.css')
-    //script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+    script(src='/javascripts/bannerHover.js')
+    script(src="https://kit.fontawesome.com/691ab763d7.js")
   body 
     div.contentContainer
       div#topNav.black-back
@@ -17,7 +19,7 @@ html
           a(href="About_Us") About Us
           a(href="FAQ") FAQ
           a(href="Invest") Invest
-          a#BookNow(href="Get_Stoked")  
+          a#BookNow(href="Book_Now")  
             | Book
             br
             | Now
@@ -25,13 +27,19 @@ html
 
       div#footer.flexRow
         div.flexHalf
-          text.fittedText.GrandSport-font-small.font-red ADRENALINE
-          br
-          text.fittedText.font-white /əˈdren(ə)lən/ noun. 
-          br
-          text.fittedText.font-fit.font-white Adrenaline is used in both technical and nontechnical contexts. It is commonly used in describing the physiological symptoms (such as increased heart rate and respiration) that occur as part of the body's fight-or-flight response.           &copy;Merriam-Webster
-    
+          div
+            text.fittedText.GrandSport-font-small.font-red ADRENALINE
+            br
+            text.fittedText.font-white /əˈdren(ə)lən/ noun. 
+            br
+            text.fittedText.font-fit.font-white Adrenaline is used in both technical and nontechnical contexts. It is commonly used in describing the physiological symptoms (such as increased heart rate and respiration) that occur as part of the body's fight-or-flight response.           &copy;Merriam-Webster
+        //div.flexHalf
+        // *ENTER NEWSLETTER SIGNUP HERE
+        
       div#copyrightsFooter.black-back
-        text.fittedText &copy; Adrenaline Sports Resort | All Rights Reserved
+        a#fbLink(href='https://www.facebook.com/ASR.life', target='_blank')
+        a#instaLink(href='https://www.instagram.com/asr.life', target='_blank')
+        a#linkedinLink(href='https://www.linkedin.com/company/asrlife/about', target='_blank')
+        text.fittedText 2019 &copy; Adrenaline Sports Resort | All Rights Reserved
 
     script(src='/javascripts/slideshow.js')

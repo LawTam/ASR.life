@@ -190,29 +190,29 @@ ul{
   text-decoration: none;
   overflow: hidden; 
 }
-.banner-inner {
+.banner {
   background-size: cover;
   background-position: center;
   transition: all 0.5s ease;
 }
-.banner-inner img {
+.banner img {
   background-size: cover;
   background-position: center;
   transition: all 0.5s ease;
   width: 100%;
 }
-.banner-inner .block {
+.banner .block {
   padding: 2px;
-  height: 200px;
+  height: 10vh;
 }
-.banner-inner .subText {
+.banner .subText {
   font: 1.7vmin "Dubai";
 }
-.banner-inner .bannerName {
+.banner .bannerName {
   font: 2.3vmin 'Montalban';
 }
 
-.banner-inner:hover {
+.banner:hover {
   color: #D91E36;
 }
 .navArrow {

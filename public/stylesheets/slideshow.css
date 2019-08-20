@@ -7,8 +7,16 @@
     width: 70vw;
     height: 70vh;
     border: 5px solid #181B1E;
+    contain: content;
   }
   
+  .full-width {
+    max-width: 100vw;
+    width: 100vw;
+    border: 0px;
+    background-color: #c3c3c3;
+  }
+
   /* Hide the images by default */
   .mySlides {
     display: none;
@@ -51,6 +59,12 @@
 
   .prev {
     left: 0;
+  }
+
+  .prev.bottom{
+    left: 0;
+    top: 100;
+    bottom: 5;
   }
   
   /* Position the "next button" to the right */

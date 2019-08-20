@@ -21,6 +21,7 @@ ul{
   z-index: 2;
 }
 #topNav a{
+  transition: all 0.5s ease;
   color: white;  
   float: left;
   text-align: center;
@@ -187,22 +188,31 @@ ul{
   flex-direction: column;
   margin: 5px;
   text-decoration: none;
+  overflow: hidden; 
 }
-.banner img {
+.banner-inner {
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+}
+.banner-inner img {
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
   width: 100%;
 }
-.banner .block {
+.banner-inner .block {
   padding: 2px;
   height: 200px;
 }
-.banner .subText {
+.banner-inner .subText {
   font: 1.7vmin "Dubai";
 }
-.banner .bannerName {
+.banner-inner .bannerName {
   font: 2.3vmin 'Montalban';
 }
 
-.banner:hover {
+.banner-inner:hover {
   color: #D91E36;
 }
 .navArrow {

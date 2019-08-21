@@ -82,6 +82,9 @@ ul{
 }
 
 /* Block content styles */
+.vertical-center {
+  justify-content: center;
+}
 .contentContainer {
   position: relative;
   overflow-y: hidden;
@@ -180,6 +183,10 @@ ul{
   background-color: #c3c3c3;
   color: black;
 }
+.white-back {
+  background-color: white;
+  color: black;
+}
 
 .banner {
   position: relative;
@@ -270,6 +277,13 @@ ul{
   margin: 0 auto;
   margin-top: 50px;
   align-content: center;
+}
+
+#pick-wet-or-dry {
+  margin: 0 auto;
+}
+#dryland-sports{
+  background-color: black;
 }
 
 

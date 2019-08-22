@@ -9,26 +9,66 @@ block content
             h1.bannerT2 #{title}
             .slideshow-container.full-width
                 div#pick-wet-or-dry.mySlides.fade.center.vertical-center
-                    div.flexRow
-                        div.left.banner.flexThird.white-back
+                    div.flexRow.vertical-center
+                        div.left.banner.flexThird.white-back.vertical-center
                             image(src='/images/driving_hard2.jpg')
                             br
                             text.subText More on aquatic sports
+                            br
                             text.bannerName Get Wet
-                            a.prev.bottom.relative(onclick= 'plusSlides(-1)') &#10094;
+                            br
+                            br
+                            a.prev.bottom(onclick= 'plusSlides(-1)') &#10094;
                         div.middle.flexThird.vertical-center
                             text.vertical-center At ASR, we take pride in our state of the art facilities for both dryland and aquatic sports.
                             br
                             br
-                            text.inner Click on either banner for more information.
+                            text.inner Click the arrows on either banner for more information on the dryland and aquatic facilities we plan to implement in the resort.
                         div.right.banner.flexThird.white-back
                             image(src='/images/stay_dry.jpg')
                             br
                             text.subText More on dryland sports
+                            br
                             text.bannerName Play Dry
+                            br
+                            br
+                            br
+                            a.next.bottom(onclick= 'plusSlides(1)') &#10095;
+
+                div.mySlides.fade#dryland-sports.vertical-center.center
+                    div.flexRow.vertical-center
+                        div#nav-pick-wet-or-dry.vertical-center
+                            text Back to Home
+                            a.prev.relative(onclick= 'plusSlides(-1)') &#10094;
+                        div.middle 
+                            h1 Dryland Sports
+                            image(src='/images/stay_dry.jpg')
+                            br
+                            text Climbing Gym: Enjoy a realistic off-width seesion or more standard gym wall over lunch
+                            br
+                            text Mountain Biking/Pump park: Hit the ring loop aroudn the facilities for some challenging features, or dive into the pump park.
+                            br
+                            text Gym and Yoga: Top off the day with a yoga session or hit the weights for a well rounded workout.
+                        div#nav-aquatic-sports
+                            text More on water sports
                             a.next.relative(onclick= 'plusSlides(1)') &#10095;
-                .mySlides.fade#dryland-sports
-                .mySlides.fade#aquatic-sports
+
+                div.mySlides.fade#aquatic-sports.center
+                    div.flexRow.vertical-center
+                        #nav-dryland-sports
+                            text.center More on dryland sports
+                            a.prev.relative(onclick= 'plusSlides(-1)') &#10094;
+                        .middle
+                            h1 Water Sports
+                            image(src='/images/driving_hard2.jpg')
+                            text Whitewater rafting: Set out for a great whitewater rafting trip with your friends, family or coworkers.  Guided 90 minute trips over class II-IV rapids, you choose the difficulty.
+                            br 
+                            text Whitewater kayaking and canoeing: World class whitewater kayaking in the city.  With pump driven rapids, the whitewater can be dialed up for a slalom event or turned down for an grade school adventure.
+                            br
+                            text Surfing, SUP, and River Boarding: Learn to ride a SUP and catch a wave, or even run the rapids.
+                        div#nav-pick-wet-or-dry
+                            text Back to Home
+                            a.next.relative(onclick= 'plusSlides(1)') &#10095;
 
             div(text-align= center)
                 span.dot(onclick= 'currentSlide(1)')

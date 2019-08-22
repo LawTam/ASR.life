@@ -75,13 +75,29 @@ ul{
   margin-bottom: 5px;
 }
 #copyrightsFooter {
+  padding: 4px;
   padding-left: 5px;
   color: white;
-  font-size: 1.5vmin;
+  font-size: 2.2vmin;
   display: flex;
+  text-decoration: none;
+}
+#copyrightsFooter a {
+  padding-right: 20px;
 }
 
+
+.fab {
+  color: white;
+}
+
+
 /* Block content styles */
+.vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .contentContainer {
   position: relative;
   overflow-y: hidden;
@@ -129,6 +145,7 @@ ul{
 .center {
   align-content: center;
   text-align: center;
+  margin: 0 auto;
 }
 .mainContent {
   overflow: hidden;
@@ -180,6 +197,10 @@ ul{
   background-color: #c3c3c3;
   color: black;
 }
+.white-back {
+  background-color: white;
+  color: black;
+}
 
 .banner {
   position: relative;
@@ -212,7 +233,7 @@ ul{
   font: 2.3vmin 'Montalban';
 }
 
-.banner:hover {
+#banners .banner:hover {
   color: #D91E36;
 }
 .navArrow {
@@ -270,6 +291,19 @@ ul{
   margin: 0 auto;
   margin-top: 50px;
   align-content: center;
+}
+
+#pick-wet-or-dry {
+
+}
+#nav-pick-wet-or-dry {
+  flex: 0.5;
+}
+#nav-dryland-sports {
+  flex: 0.5
+}
+#nav-aquatic-sports {
+  flex: 0.5;
 }
 
 

@@ -5,7 +5,6 @@
     margin: auto;
     padding: 10 auto;
     width: 70vw;
-
     border: 5px solid #181B1E;
     contain: content;
   }
@@ -29,6 +28,7 @@
   }
   .mySlides .img {
     height: 100%;
+    max-height: 60vh;
   }
 
   .mySlides#slide1 {
@@ -56,6 +56,11 @@
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+  }
+
+  .nav-name {
+    position: relative;
+    top: 30%;
   }
 
   .prev {

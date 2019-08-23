@@ -75,6 +75,7 @@ ul{
   margin-bottom: 5px;
 }
 #copyrightsFooter {
+  padding-top: 20px;
   padding: 4px;
   padding-left: 5px;
   color: white;
@@ -305,7 +306,9 @@ ul{
 #nav-aquatic-sports {
   flex: 0.5;
 }
-
+.cap-image-height {
+  max-height: 30vh;
+}
 
 @font-face {
   font-family: "Grand Sport";

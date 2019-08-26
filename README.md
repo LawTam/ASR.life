@@ -35,7 +35,6 @@ Main Color Scheme: #D91E36 (red, Alizarin), #FFFFFF (white), #181B1E (black, Bla
 
 Accent Colors: #c3c3c3 (white, Silver), #EED202 (yellow, Safety Yellow)
 
-
 Fonts: 
 
 1. Company font: "Montalban"
@@ -46,3 +45,25 @@ Fonts:
 
 # Additional Resources
 @font-face css generator || http://www.cufonfonts.com
+
+# Things I Did Well
+1. Branding and colors look great
+
+2. Good use of layout and css sheets
+
+# Things I Learned
+1. HTML basics, Pug, Modular HTML
+
+2. CSS basics, making layouts, media queries
+
+3. Javascript basics
+
+4. NPM
+# Improvements I Can Make
+1. Use Bootstrap instead of manually making all my CSS
+
+2. Make user actions more obvious
+
+3. Plan further ahead for how large I want the screen to be
+
+4. Use more Animations - Web Animations API

@@ -238,10 +238,12 @@ ul{
   color: #D91E36;
 }
 .navArrow {
-  font: 2.3vmin 'Montalban';
-  position: absolute;
-  left: 5px;
-  bottom: 0;
+  font: 2.0vmin 'Montalban';
+  color: white;
+  background-color: #D91E36;
+  padding: 5px;
+  display: inline-block;
+  border-radius: 5px;
 }
 .fittedText {
   text-align: center;

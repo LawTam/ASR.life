@@ -3,7 +3,8 @@ html,body {
 }
 body {
   background-color: white;
-  font: 1.1rem "Dubai";
+  font: 1.1rem;
+  font-family: Sans-Serif;
   margin: 0;
 }
 ul{
@@ -63,7 +64,8 @@ ul{
 
 /* Main section styles */
 #footer {
-  background-image: url('../images/adrenaline_footer.png');
+  /*background-image: url('../images/adrenaline_footer.png'); */
+  background-color: gray;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -228,7 +230,7 @@ ul{
   height: 10vh;
 }
 .banner .subText {
-  font: 1.7vmin "Dubai";
+  font: 1.7vmin ;
 }
 .banner .bannerName {
   font: 2.3vmin 'Montalban';

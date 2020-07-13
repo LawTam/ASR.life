@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', src='stylesheets/style.css')
+    link(rel='stylesheet', src='stylesheets/slideshow.css')
+    //link(rel='stylesheet', src='/stylesheets/flip-card.css')
+    //link(rel='stylesheet', src='/stylesheets/jquery.pagepiling.css')
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+    script(src='javascripts/bannerHover.js')
+    script(src="https://kit.fontawesome.com/691ab763d7.js")
+  body 
+    div.contentContainer
+      div#topNav.black-back
+        a#homeNav(src='/')
+          img#ASR_logo(src='images/ASR_Logo25.png', alt="ASR logo")
+          text#ASR_text ADRENALINE SPORTS RESORT 
+        div#navRoutes       
+          a(src="About_Us") About Us
+          a(src="FAQ") FAQ
+          a(src="http://www.asr.life/contact/") Invest
+          a#BookNow(src="Book_Now")  
+            | Book
+            br
+            | Now
+          a.fab.fa-facebook(src='https://www.facebook.com/ASR.life', target='_blank')
+          a.fab.fa-instagram(src='https://www.instagram.com/asr.life', target='_blank')
+          a.fab.fa-linkedin(src='https://www.linkedin.com/company/asrlife/about', target='_blank')
+      
+      block content
+
+      div#footer.flexRow
+        div.flexHalf
+          div.vertical-center
+            text.fittedText.GrandSport-font-small.font-red ADRENALINE
+            br
+            text.fittedText.font-white /əˈdren(ə)lən/ noun. 
+            br
+            text.fittedText.font-fit.font-white Adrenaline is used in both technical and nontechnical contexts. It is commonly used in describing the physiological symptoms (such as increased heart rate and respiration) that occur as part of the body's fight-or-flight response.           &copy;Merriam-Webster
+        //div.flexHalf
+        // *ENTER NEWSLETTER SIGNUP HERE
+        
+      div#copyrightsFooter.black-back
+        text.fittedText 2019 &copy; Adrenaline Sports Resort | All Rights Reserved
+
+    script(src='javascripts/slideshow.js')

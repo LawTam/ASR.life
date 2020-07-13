@@ -1,0 +1,139 @@
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding: 10 auto;
+    width: 70vw;
+    border: 5px solid #181B1E;
+    contain: content;
+  }
+
+  
+  .full-width {
+    max-width: 100vw;
+    width: 100vw;
+    border: 0px;
+    background-color: #c3c3c3;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    width: 100%;
+    max-width: 1000px;
+    padding: 10 auto;
+    contain: content;
+
+  }
+  .mySlides .img {
+    height: 100%;
+    max-height: 60vh;
+  }
+
+  .mySlides#slide1 {
+    background-image: url('/images/slideshow/olympic_trials.jpg');
+  }
+  .mySlides#slide2 {
+    background-image: url('images/slideshow/olympic_example.jpg');
+  }
+  .mySlides#slide3 {
+    background-image: url('images/slideshow/resort_example.jpg')
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    background-color: #181B1E; 
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .nav-name {
+    position: relative;
+    top: 30%;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .prev.bottom, .next.bottom{
+    position: static;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: #D91E36;
+    color: #181B1E;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    border: 5px #181B1E;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }

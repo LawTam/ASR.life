@@ -1,11 +1,14 @@
 {
   "name": "asr.life",
+  "homepage": "http://asr.life",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon --legacy-watch ./app bin/www"
+    "start": "nodemon --legacy-watch ./app bin/www",
+    "build": "react-scripts build"
   },
   "dependencies": {
+    "build": "^0.1.4",
     "cookie-parser": "^1.4.4",
     "debug": "~2.6.9",
     "express": "^4.16.4",
@@ -16,7 +19,22 @@
     "morgan": "^1.9.1",
     "nodemon": "^1.19.1",
     "pug": "^2.0.4",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-scripts": "^3.4.0",
     "reload": "^3.0.1",
     "serve-favicon": "^2.5.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

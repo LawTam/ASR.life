@@ -1,0 +1,324 @@
+html,body {
+  overflow-x: hidden;
+}
+body {
+  background-color: white;
+  font: 1.1rem;
+  font-family: Sans-Serif;
+  margin: 0;
+}
+ul{
+  list-style-type: none;
+}
+
+/* Styling for Top Navigation Bar*/
+#topNav {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-right: 15px;
+  z-index: 2;
+}
+#topNav a{
+  transition: all 0.5s ease;
+  color: white;  
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+#topNav a#homeNav {
+  padding-left: 8%;
+  font: 20px 'Montalban';
+}
+#topNav #ASR_logo {
+  height: 35px;
+}
+#topNav #ASR_text {
+  vertical-align: 35%;
+  padding-top: 0px;
+  padding-left: 10px;
+}
+#topNav #navRoutes{
+  padding-right: 3%;
+  float: right;
+}
+#topNav #navRoutes a{
+  padding-top: 6px;
+  margin-right: 30px;
+}
+#navRoutes a:hover {
+  color: #EED202;
+}
+#topNav #navRoutes a#BookNow {
+  padding: 5px;
+  padding-right: 15px;
+  text-align: center;
+  font: 18px 'Grand Sport';
+  background-image: linear-gradient(#D91E36, #3C0101);
+  border-radius: 2px;
+  white-space: pre;
+}
+
+/* Main section styles */
+#footer {
+  /*background-image: url('../images/adrenaline_footer.png'); */
+  background-color: gray;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 150px;
+  contain: content;
+  padding: 10px;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+#copyrightsFooter {
+  padding-top: 20px;
+  padding: 4px;
+  padding-left: 5px;
+  color: white;
+  font-size: 2.2vmin;
+  display: flex;
+  text-decoration: none;
+}
+#copyrightsFooter a {
+  padding-right: 20px;
+}
+
+
+.fab {
+  color: white;
+}
+
+
+/* Block content styles */
+.vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contentContainer {
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  z-index: 3;
+}
+.inner {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+.videoMask {
+  width: inherit;
+  overflow: hidden;
+  padding-top: 20px;
+}
+.theGoodStuff {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  width: 100%;
+  overflow: hidden;
+}
+.bannerT1 {
+  padding-left: 5%;
+  font: 3rem "Grand Sport";
+}
+.bannerT2 {
+  font: 2.5rem "Montalban";
+  color: #D91E36;
+}
+.GrandSport-font-small {
+  font: 2rem "Grand Sport";
+}
+.font-red {
+  color: #cc0000;
+}
+.font-white {
+  color: white;
+}
+.font-fit {
+  line-height: 1;
+  font-size: 1.8vmin;
+}
+.center {
+  align-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.mainContent {
+  overflow: hidden;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+.flexHalf {
+  flex: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  justify-content: center;
+  vertical-align: 50%;
+  align-items: center;
+  contain: content;
+  float: left;
+  max-width: 670px;
+}
+.flexHalf-Left {
+  flex: 0.5;
+  padding-left: 10%;
+  text-align: center;
+  justify-content: center;
+  vertical-align: 50%;
+  align-items: center;
+}
+.flexHalf-Right {
+  flex: 0.5;
+  padding-right: 10%;
+  text-align: center;
+  justify-content: center;
+  vertical-align: 50%;
+  align-items: center;
+}
+.flexThird {
+  flex: 1;
+}
+.black-back {
+  background-color: #181b1e;
+  color: white;
+}
+.gray-back {
+  background-color: #c3c3c3;
+  color: black;
+}
+.white-back {
+  background-color: white;
+  color: black;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 5px;
+  text-decoration: none;
+  overflow: hidden; 
+}
+.banner {
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+}
+.banner img {
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+.banner .block {
+  padding: 2px;
+  height: 10vh;
+}
+.banner .subText {
+  font: 1.7vmin ;
+}
+.banner .bannerName {
+  font: 2.3vmin 'Montalban';
+}
+
+#banners .banner:hover {
+  color: #D91E36;
+}
+.navArrow {
+  font: 2.0vmin 'Montalban';
+  color: white;
+  background-color: #D91E36;
+  padding: 5px;
+  display: inline-block;
+  border-radius: 5px;
+}
+.fittedText {
+  text-align: center;
+}
+
+.constrain {
+  max-width: 1240px;
+  align-content: center;
+  margin: 0 auto;
+  contain: content;
+}
+
+/* Homepage specific styles */
+#welcomeVideo{
+  position: relative;
+  overflow:hidden;
+  width: 100vw;
+  height: 100vh;
+}
+#lookingForARush {
+  color: white;
+}
+#lookingForARush #ASRAerial.container{
+  width: 100%;
+  background-color: white;
+  color: #181B1E;
+}
+#ASRAerial .img {
+  width: 100%;
+  max-width: 670px;
+
+  background-color: white;
+}
+#ASRAerial .text {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+#banners {
+  background-color: white;
+  color: black;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+#blogSlideshow {
+  margin: 0 auto;
+  margin-top: 50px;
+  align-content: center;
+}
+
+#pick-wet-or-dry {
+
+}
+#nav-pick-wet-or-dry {
+  flex: 0.5;
+}
+#nav-dryland-sports {
+  flex: 0.5
+}
+#nav-aquatic-sports {
+  flex: 0.5;
+}
+.cap-image-height {
+  max-height: 30vh;
+}
+
+@font-face {
+  font-family: "Grand Sport";
+  src: url("fonts/grand_sport/grandsporthalfital.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Montalban";
+  src: url("fonts/montalban/Montalban.otf") format("opentype");
+}
